@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/username_textfield"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/logo_imageview"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/password_textfield"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username_textfield"
+        android:layout_alignStart="@+id/username_textfield"
+        android:layout_below="@+id/username_textfield"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="21dp"
+        android:text="Login"
+        android:layout_below="@+id/remember_passowrd_checkbox"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/logo_imageview"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="119dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/remember_passowrd_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Remember Password"
+        android:layout_below="@+id/password_textfield"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
